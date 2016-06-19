@@ -67,3 +67,19 @@ typedef struct _COMSTAT {
   DWORD cbInQue;
   DWORD cbOutQue;
 } COMSTAT, *LPCOMSTAT;
+
+// https://msdn.microsoft.com/en-us/library/windows/desktop/ms684839(v=vs.85).aspx
+/*
+typedef struct tagPROCESSENTRY32 {
+  DWORD     dwSize;
+  DWORD     cntUsage;
+  DWORD     th32ProcessID;
+  ULONG_PTR th32DefaultHeapID;
+  DWORD     th32ModuleID;
+  DWORD     cntThreads;
+  DWORD     th32ParentProcessID;
+  LONG      pcPriClassBase;
+  DWORD     dwFlags;
+  TCHAR     szExeFile[MAX_PATH];
+} PROCESSENTRY32, *PPROCESSENTRY32;
+*/

@@ -247,7 +247,7 @@ def CreateToolhelp32Snapshot(dwFlags, th32ProcessID):
     Takes a snapshot of the specified processes, as well as the heaps,
     modules, and threads used by these processes.
 
-    .. seealso::
+    .. see also::
 
         https://msdn.microsoft.com/en-us/ms682489
 

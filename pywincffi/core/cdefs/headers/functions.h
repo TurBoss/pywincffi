@@ -232,3 +232,15 @@ BOOL WINAPI ClearCommError(
   _Out_opt_ LPDWORD   lpErrors,
   _Out_opt_ LPCOMSTAT lpStat
 );
+
+
+///////////////////////
+// Security
+///////////////////////
+
+// https://msdn.microsoft.com/en-us/aa376389
+BOOL WINAPI CheckTokenMembership(
+  _In_opt_ HANDLE TokenHandle,
+  _In_     PSID   SidToCheck,
+  _Out_    PBOOL  IsMember
+);
